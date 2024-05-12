@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Young-serif";
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf)
+    format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3e5d8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Young-serif, sans-serif;
+}
+
+.rp-font {
+  font-family: Outfit, sans-serif;
+}
+
+.container {
+  width: 736px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 125px 0;
+}
+
+hr {
+  margin: 40px 40px 0;
+  border-color: #e0e0e0;
+}
+.header,
+.text-card-main {
+  padding: 40px 40px 0;
+}
+
+.hero-img {
+  width: 656px;
+  border-radius: 10px;
+}
+
+.header > h1,
+.header > span {
+  display: block;
+  padding-top: 20px;
+  color: #5c5857;
+}
+
+.header > h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #353535;
+}
+.text-card-sub {
+  background-color: #fff7fc;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.text-card-sub > .card-title {
+  padding-bottom: 20px;
+  color: #6f2945;
+}
+
+.text-card-sub > .list-header > li::marker {
+  color: #6f2945;
+}
+
+.list-header {
+  padding: 0 20px;
+}
+
+.list-header > li::marker {
+  color: #834732;
+}
+
+.list-items {
+  padding: 5px 20px;
+  color: #5c5857;
+}
+
+.text-card-main > h1 {
+  padding-bottom: 20px;
+  color: #834732;
+}
+
+.emphasize {
+  font-weight: 600;
+}
+
+.pretty-table {
+  width: 100%;
+  padding: 20px 0 40px;
+}
+
+th,
+td {
+  color: #5c5857;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.text-color {
+  color: #834732;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    gap: 0;
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .header > h1,
+  .header > span,
+  .text-card-main {
+    padding: 20px 20px 0;
+  }
+
+  .hero-img {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  .container {
+    width: 100%;
+    background-color: white;
+    margin: 0;
+  }
+}
